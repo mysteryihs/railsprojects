@@ -1,0 +1,17 @@
+<html>
+  <head></head>
+  <body>
+    <p>
+      <%= secret_word_hidden %>
+    </p>
+    <form>
+    <input type='text' name='guess' />
+    <input type='submit' value='Guess!' />
+    </form>
+    <p>
+      You have <%= guesses %> guesses left.<br>
+      You have guessed <%= guessed_letters %> so far.
+    </p>
+      <a href="/new">Reset?</a>
+  </body>
+</html>
